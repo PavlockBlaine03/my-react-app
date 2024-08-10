@@ -7,14 +7,14 @@ function Header() {
         <>
             <header className={styles.header}>
                 <div className={styles.titleBar}>
-                    <h1 className={styles.title}>Header Test</h1>
+                    <h1 className={styles.title}>My React App</h1>
                 </div>
                 <div className={styles.navBar}>
                     <ul className={styles.navList}>
-                        <li>test1</li>
-                        <li>test2</li>
-                        <li>test3</li>
-                        <li>test4</li>
+                        <li className={styles.home}>Home</li>
+                        <li className={styles.about}>About</li>
+                        <li className={styles.contact}>Contact</li>
+                        <li className={styles.profile}>Profile</li>
                     </ul>
                 </div>
                 <hr></hr>

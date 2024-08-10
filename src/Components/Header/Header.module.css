@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgba(7, 7, 7, 150);
 }
 
 .header {
@@ -64,4 +64,36 @@ body {
 }
 .navList {
     color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+}
+.navList li {
+    display: inline;
+    margin-right: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    position: relative;
+    
+}
+.navList li:hover {
+    cursor: pointer;
+}
+
+.home::after, .about::after, .contact::after, .profile::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 120%;
+    border-radius: 20px;
+    background: linear-gradient(to right, purple, blue);
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: 100ms;
+    transform: translate(-5px, 0);
+}
+.home:hover::after, .about:hover::after, .contact:hover::after, .profile:hover::after {
+    height: 100%;
 }
