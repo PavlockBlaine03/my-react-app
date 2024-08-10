@@ -10,7 +10,7 @@ function Header() {
                     <h1 className={styles.title}>Header Test</h1>
                 </div>
                 <div className={styles.navBar}>
-                    <ul className="nav-list">
+                    <ul className={styles.navList}>
                         <li>test1</li>
                         <li>test2</li>
                         <li>test3</li>
