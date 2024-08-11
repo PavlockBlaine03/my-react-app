@@ -2,11 +2,6 @@ body {
     background-color: rgba(7, 7, 7, 150);
 }
 
-.header {
-
-}
-
-
 .titleBar {
     display: flex;
     justify-content: center;
@@ -62,20 +57,25 @@ body {
     justify-content: center;
     align-items:  center;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .navList {
     color: white;
     list-style-type: none;
     padding: 0;
     margin: 10px;
 }
-.navList li {
+.navList li{
     display: inline;
     margin-right: 10px;
     font-family: Arial, sans-serif;
     font-size: 20px;
     margin: 10px;
     position: relative;
-    
 }
 .navList li:hover {
     cursor: pointer;
