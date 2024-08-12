@@ -2,16 +2,16 @@ import Card from "../Components/Card/Card.jsx"
 import Button from "../Components/Button/Button.jsx";
 import Header from "../Components/Header/Header.jsx";
 import Footer from "../Components/Footer/Footer.jsx";
-import Login from "../Components/Login/LoginComp.jsx";
+import LoginComp from "../Components/Login/LoginComp.jsx";
 
-function Home() {
+function Login() {
   return(
     <>
-      <Header header="Welcome Home"/>
-      
+      <Header header="Login"/>
+      <LoginComp/>
       <Footer/>
     </>
     );
 }
 
-export default Home
+export default Login

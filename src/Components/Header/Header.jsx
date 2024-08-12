@@ -14,7 +14,7 @@ function Header(props) {
                         <a href="./index.html"><li className={styles.home}>Home</li></a>
                         <a href="./about.html"><li className={styles.about}>About</li></a>
                         <li className={styles.contact}>Contact</li>
-                        <li className={styles.profile}>Profile</li>
+                        <a href="./login.html"><li className={styles.profile}>Profile</li></a>
                     </ul>
                 </div>
                 <hr></hr>

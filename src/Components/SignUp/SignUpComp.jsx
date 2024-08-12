@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import styles from './Login.module.css'
+import styles from './SignUp.module.css'
 
-const Login = () => {
+const SignUpComp = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -19,7 +19,7 @@ const Login = () => {
     return (
         <>
         <div className={styles.loginContainer}>
-            <h2>Login</h2>
+            <h2>Sign Up</h2>
             <form onSubmit={handleLogin}>
                 <div className={styles.formGroup}>
                     <label>Email:</label>
@@ -37,8 +37,17 @@ const Login = () => {
                     onChange={(e) => setPassword(e.target.value)}
                     required />
                 </div>
+                <div className={styles.formGroup}>
+                    <label>Confirm Password:</label>
+                    <input 
+                    type='password' 
+                    value={password} 
+                    onChange={(e) => setPassword(e.target.value)}
+                    required />
+                </div>
                 {error && <p className={styles.error}>{error}</p>}
-                <button className={styles.submit} type='submit'>Login</button>
+                <button className={styles.submit} type='submit'>SignUp</button>
+                <p>Have a account? Click <a href='./login.html'>here</a> to login</p>
             </form>
         </div>
         </>
@@ -46,4 +55,4 @@ const Login = () => {
 
 };
 
-export default Login
+export default SignUpComp
